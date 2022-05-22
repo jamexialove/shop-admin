@@ -1,53 +1,39 @@
-<script setup lang="ts">
-import { ref } from 'vue'
+<script lang="tsx" setup>
+const abc = <h1>abc</h1>
+// import { ref } from 'vue'
+// const props = defineProps({
+//   msg: {
+//     type: String,
+//     default: 'hello'
+//   }
+// })
+// const emit = defineEmits(['increment'])
+// // const msg = 'abc'
+// const count = ref(100)
 
-defineProps<{ msg: string }>()
+// const increment = () => {
+//    (props.msg)
+//   count.value++
+//   emit('increment')
+// }
 
-const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>
+    hello
+  </h1>
+  <abc />
+  <!-- <p>{{ props.msg }}</p>
 
-  <p>
-    Recommended IDE setup:
-    <a
-      href="https://code.visualstudio.com/"
-      target="_blank"
-    >VS Code</a>
-    +
-    <a
-      href="https://github.com/johnsoncodehk/volar"
-      target="_blank"
-    >Volar</a>
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a
-      href="https://vitejs.dev/guide/features.html"
-      target="_blank"
-    >
-      Vite Docs
-    </a>
-    |
-    <a
-      href="https://v3.vuejs.org/"
-      target="_blank"
-    >Vue 3 Docs</a>
-  </p>
+  <p>{{ count }}</p>
 
   <button
     type="button"
-    @click="count++"
+    @click="increment"
   >
-    count is: {{ count }}
-  </button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+    increment
+  </button> -->
 </template>
 
 <style scoped>
