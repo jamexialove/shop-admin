@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
